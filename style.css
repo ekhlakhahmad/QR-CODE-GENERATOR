@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    height: 80px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    width: 80px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+}
+
+header h3{
+    display: none;
+}
+
+header ul li{
+    margin:10px;
+}
+
+
+.main-container{
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    margin: 50px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#inputField, .outputQR, button{
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+    margin: 8px 0;
+    padding: 8px;
+}
+.outputQR{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outputQR img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    border: 2px solid black;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin: 8px 0;
+    padding: 8px;
+    color: #000000;
+}
+button:hover{
+    background-color: #bcbcbc;
+    cursor: pointer;
+}
+a:hover{
+    background-color: #bcbcbc;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: 60px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-container{
+        width:85%;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    header h3{
+        display:block;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width:900px){
+
+    .main-container{
+        width:60%;
+    }
+
+}
+
