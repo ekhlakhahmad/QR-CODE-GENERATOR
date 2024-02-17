@@ -6,36 +6,39 @@
 }
 header{
     width: 100%;
-    height: 80px;
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
 }
 header img{
-    width: 80px;
-    padding: 5px;
+    width: 70px;
     cursor: pointer;
 }
 
 header ul{
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
-}
-
-header h3{
-    display: none;
 }
 
 header ul li{
     margin:10px;
+    font-size: 18px;
 }
 
-
+header ul li:hover{
+    color: brown;
+    cursor: pointer;
+}
 .main-container{
     width: 30%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-    margin: 50px auto;
+    margin: 30px auto;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -86,18 +89,6 @@ a:hover{
     background-color: #bcbcbc;
     cursor: pointer;
 }
-footer{
-    width: 100%;
-    height: 60px;
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-}
-
 @media only screen and (max-width: 600px) {
     .main-container{
         width:85%;
@@ -111,12 +102,3 @@ footer{
         display:block;
     }
 }
-
-@media only screen and (min-width: 600px) and (max-width:900px){
-
-    .main-container{
-        width:60%;
-    }
-
-}
-
